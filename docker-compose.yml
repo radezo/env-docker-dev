@@ -16,7 +16,6 @@ services:
       - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/php.ini
       - ${SSL_DIR-./config/ssl}:/etc/apache2/ssl/
       - ${APACHE_SITES_ENABLED-./config/apache/sites-enabled}:/etc/apache2/sites-enabled
-      - ${APACHE_SITES_AVAILABLE-./config/apache/sites-available}:/etc/apache2/sites-available
       - ${LOG_DIR-./logs/apache2}:/var/log/apache2
       - ${XDEBUG_LOG_DIR-./logs/xdebug}:/var/log/xdebug
     environment:
